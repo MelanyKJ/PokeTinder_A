@@ -3,8 +3,19 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Android DESARROLLO EJE/PokeTinder_A/app/src/main/res/drawable/background_rounded_edit_text.xml" value="0.18" />
+        <entry key="..\:/Android DESARROLLO EJE/PokeTinder_A/app/src/main/res/drawable/gradient_intro_fail2.xml" value="0.18" />
+        <entry key="..\:/Android DESARROLLO EJE/PokeTinder_A/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
         <entry key="..\:/Android DESARROLLO EJE/PokeTinder_A/app/src/main/res/drawable/splash_activity.xml" value="0.1605" />
+        <entry key="..\:/Android DESARROLLO EJE/PokeTinder_A/app/src/main/res/font/bunge_outline.xml" value="0.284375" />
+        <entry key="..\:/Android DESARROLLO EJE/PokeTinder_A/app/src/main/res/layout/activity_login.xml" value="0.1" />
+        <entry key="..\:/Android DESARROLLO EJE/PokeTinder_A/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
+        <entry key="..\:/Android DESARROLLO EJE/PokeTinder_A/app/src/main/res/layout/activity_onboarding.xml" value="0.1" />
+        <entry key="..\:/Android DESARROLLO EJE/PokeTinder_A/app/src/main/res/layout/activity_onboarding2.xml" value="0.14719202898550723" />
+        <entry key="..\:/Android DESARROLLO EJE/PokeTinder_A/app/src/main/res/layout/activity_register.xml" value="0.12183383991894631" />
         <entry key="..\:/Android DESARROLLO EJE/PokeTinder_A/app/src/main/res/layout/activity_splash.xml" value="0.12360688956433637" />
+        <entry key="..\:/Android DESARROLLO EJE/PokeTinder_A/app/src/main/res/layout/item_back_button.xml" value="0.13949275362318841" />
+        <entry key="..\:/Android DESARROLLO EJE/PokeTinder_A/app/src/main/res/layout/item_onboarding.xml" value="0.264" />
       </map>
     </option>
   </component>
