@@ -5,6 +5,8 @@ import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
 import com.melany.poketinder_a.databinding.ActivitySplashBinding
+import com.melany.poketinder_a.ui.view.BaseActivity
+import com.melany.poketinder_a.ui.view.LoginActivity
 import com.melany.poketinder_a.util.SharedPreferenceUtil
 
 class SplashActivity : BaseActivity<ActivitySplashBinding>(ActivitySplashBinding::inflate){

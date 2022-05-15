@@ -1,4 +1,4 @@
-package com.melany.poketinder_a.activity
+package com.melany.poketinder_a.ui.view
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

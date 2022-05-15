@@ -1,11 +1,9 @@
 package com.melany.poketinder_a.activity
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageButton
 import android.widget.ImageView
 import android.widget.LinearLayout
 import androidx.core.content.ContextCompat
@@ -14,9 +12,10 @@ import androidx.viewpager2.widget.ViewPager2
 import com.melany.poketinder_a.R
 import com.melany.poketinder_a.adapter.OnboardingAdapter
 import com.melany.poketinder_a.databinding.ActivityOnboardingBinding
+import com.melany.poketinder_a.ui.view.BaseActivity
+import com.melany.poketinder_a.ui.view.RegisterActivity
 import com.melany.poketinder_a.util.Mock
 import com.melany.poketinder_a.util.SharedPreferenceUtil
-import java.text.FieldPosition
 
 class OnboardingActivity : BaseActivity<ActivityOnboardingBinding>(ActivityOnboardingBinding::inflate) {
     private val adapter = OnboardingAdapter(Mock().getOnboarding())
@@ -40,7 +39,7 @@ class OnboardingActivity : BaseActivity<ActivityOnboardingBinding>(ActivityOnboa
 
         binding.layBackButton.setOnClickListener{
             sharedPreferenceUtil.saveIntroShow()
-            startActivity(Intent(this,RegisterActivity::class.java))
+            startActivity(Intent(this, RegisterActivity::class.java))
         }
     }
     private fun setupIndicator(){

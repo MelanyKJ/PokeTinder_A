@@ -13,10 +13,10 @@
             android:name=".activity.OnboardingActivity"
             android:exported="false" />
         <activity
-            android:name=".activity.RegisterActivity"
+            android:name=".ui.view.RegisterActivity"
             android:exported="false" />
         <activity
-            android:name=".activity.LoginActivity"
+            android:name=".ui.view.LoginActivity"
             android:exported="false" />
         <activity
             android:name=".activity.SplashActivity"
