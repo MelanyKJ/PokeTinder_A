@@ -1,6 +1,6 @@
 package com.melany.poketinder_a.util
 
-import com.melany.poketinder_a.data.Onboarding
+import com.melany.poketinder_a.data.model.Onboarding
 
 class Mock {
     fun getOnboarding() = listOf(

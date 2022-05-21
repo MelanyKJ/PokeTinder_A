@@ -1,11 +1,11 @@
-package com.melany.poketinder_a.adapter
+package com.melany.poketinder_a.ui.adapter
 
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.melany.poketinder_a.R
-import com.melany.poketinder_a.data.Onboarding
+import com.melany.poketinder_a.data.model.Onboarding
 import com.melany.poketinder_a.databinding.ItemOnboardingBinding
 import com.melany.poketinder_a.util.inflate
 
@@ -27,7 +27,7 @@ class OnboardingAdapter(val list:List<Onboarding>):
     class OnboardingHolder(view: View): RecyclerView.ViewHolder(view){
         private val binding = ItemOnboardingBinding.bind(view)
 
-        fun bind(onboarding:Onboarding){
+        fun bind(onboarding: Onboarding){
             with(binding){
                 hsv.setOnTouchListener{_,_ ->true}
                 tvTitle.text=onboarding.title

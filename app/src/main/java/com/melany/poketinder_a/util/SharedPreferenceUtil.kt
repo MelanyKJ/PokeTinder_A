@@ -4,7 +4,7 @@ import android.content.Context
 import android.content.SharedPreferences
 import android.util.Log
 import com.google.gson.Gson
-import com.melany.poketinder_a.data.User
+import com.melany.poketinder_a.data.model.User
 
 class SharedPreferenceUtil {
     companion object{
@@ -17,7 +17,7 @@ class SharedPreferenceUtil {
     fun setSharedPreference(context: Context){
         sharedPreference = context.getSharedPreferences(SHARED_PREFERENCE_KEY, Context.MODE_PRIVATE)
     }
-    fun saveFacebookUser(user: com.melany.poketinder_a.data.User){
+    fun saveFacebookUser(user: User){
         val gson = Gson()
         val jsonFacebookUser = gson.toJson(user)
 
@@ -30,7 +30,7 @@ class SharedPreferenceUtil {
         var userFacebook: User?=null
         val jsonUserFacebook = sharedPreference.getString(USER,"")
         try{
-            userFacebook = Gson().fromJson(jsonUserFacebook,User::class.java)
+            userFacebook = Gson().fromJson(jsonUserFacebook, User::class.java)
         }catch (e:Exception){
             Log.d("Codercool",e.message.toString())
         }

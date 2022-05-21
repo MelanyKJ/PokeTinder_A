@@ -1,4 +1,4 @@
-package com.melany.poketinder_a.data
+package com.melany.poketinder_a.data.model
 
 data class Onboarding (
     val id:Int,

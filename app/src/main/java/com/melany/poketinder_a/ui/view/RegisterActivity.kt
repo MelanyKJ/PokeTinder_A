@@ -3,7 +3,6 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
-import com.melany.poketinder_a.activity.MainActivity
 import com.melany.poketinder_a.databinding.ActivityRegisterBinding
 import com.melany.poketinder_a.ui.viewmodel.RegisterViewModel
 
@@ -40,19 +39,18 @@ class RegisterActivity: BaseActivity<ActivityRegisterBinding>(ActivityRegisterBi
         }
         }
 
-        fun loginUser(view:View){
-            RegisterViewModel.continueLogin()
-
-        }
-        //VALIDACION DE LOS INPUTS
-        fun registerUser(view:View){
-            RegisterViewModel.validateInputs(
-                binding.edtUserName.text.toString(),
-                binding.edtEmail.text.toString(),
-                binding.edtPassword.text.toString(),
-                binding.edtPassword2.text.toString())
+    //VALIDACION DE LOS INPUTS
+    fun loginUser(view: View){
+        RegisterViewModel.sendToLogin()
+    }
+    fun registerUser(view: View) {
+        RegisterViewModel.validateInputs(binding.edtUserName.text.toString(),
+            binding.edtEmail.text.toString(),
+            binding.edtPassword.text.toString(),
+            binding.edtPassword2.text.toString())
     }
 }
+
 
 
 

@@ -87,6 +87,22 @@
         android:textAllCaps="false"
         android:onClick="startLogin"
         android:textColor="@android:color/holo_red_dark"
-        app:backgroundTint="#f0f0f0" />
+        app:backgroundTint="#f0f0f0"/>
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="80dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/background_rounded_edit_text"
+        android:onClick="registrarUsuario"
+        android:text="Registrarse"
+        android:textAllCaps="false"
+        android:textColor="@android:color/holo_red_dark"
+        app:backgroundTint="#f0f0f0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="8dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -10,7 +10,7 @@ import androidx.core.content.ContextCompat
 import androidx.core.view.get
 import androidx.viewpager2.widget.ViewPager2
 import com.melany.poketinder_a.R
-import com.melany.poketinder_a.adapter.OnboardingAdapter
+import com.melany.poketinder_a.ui.adapter.OnboardingAdapter
 import com.melany.poketinder_a.databinding.ActivityOnboardingBinding
 import com.melany.poketinder_a.ui.view.BaseActivity
 import com.melany.poketinder_a.ui.view.RegisterActivity
