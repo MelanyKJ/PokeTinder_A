@@ -15,3 +15,4 @@ data class Pokemon(
 }
 
 fun PokemonModel.toDomain() = Pokemon(name = name, url = url)
+

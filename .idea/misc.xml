@@ -16,9 +16,13 @@
         <entry key="..\:/Android DESARROLLO EJE/PokeTinder_A/app/src/main/res/layout/activity_pokemon.xml" value="0.12183383991894631" />
         <entry key="..\:/Android DESARROLLO EJE/PokeTinder_A/app/src/main/res/layout/activity_register.xml" value="0.12183383991894631" />
         <entry key="..\:/Android DESARROLLO EJE/PokeTinder_A/app/src/main/res/layout/activity_splash.xml" value="0.12360688956433637" />
+        <entry key="..\:/Android DESARROLLO EJE/PokeTinder_A/app/src/main/res/layout/fragment_home.xml" value="0.1" />
+        <entry key="..\:/Android DESARROLLO EJE/PokeTinder_A/app/src/main/res/layout/fragment_info.xml" value="0.12360688956433637" />
         <entry key="..\:/Android DESARROLLO EJE/PokeTinder_A/app/src/main/res/layout/item_back_button.xml" value="0.13949275362318841" />
         <entry key="..\:/Android DESARROLLO EJE/PokeTinder_A/app/src/main/res/layout/item_onboarding.xml" value="0.264" />
         <entry key="..\:/Android DESARROLLO EJE/PokeTinder_A/app/src/main/res/layout/item_pokemon.xml" value="0.1" />
+        <entry key="..\:/Android DESARROLLO EJE/PokeTinder_A/app/src/main/res/menu/bottom_nav_home_menu.xml" value="0.1" />
+        <entry key="..\:/Android DESARROLLO EJE/PokeTinder_A/app/src/main/res/menu/home_navigation.xml" value="0.1" />
       </map>
     </option>
   </component>

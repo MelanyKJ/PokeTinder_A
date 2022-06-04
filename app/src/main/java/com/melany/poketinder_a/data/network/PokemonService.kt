@@ -14,3 +14,4 @@ class PokemonService @Inject constructor(private val pokemonApi: PokemonApi) {
         }
     }
 }
+

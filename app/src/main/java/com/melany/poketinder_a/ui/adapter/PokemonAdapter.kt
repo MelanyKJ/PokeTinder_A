@@ -1,5 +1,4 @@
 package com.melany.poketinder_a.ui.adapter
-
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
@@ -10,7 +9,6 @@ import com.melany.poketinder_a.domian.model.Pokemon
 import com.melany.poketinder_a.util.inflate
 
 import javax.security.auth.callback.Callback
-
 class PokemonAdapter(
     var list: List<Pokemon>,
     var callback: Callback
