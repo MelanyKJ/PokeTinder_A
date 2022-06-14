@@ -17,12 +17,10 @@ class OnboardingAdapter(val list:List<Onboarding>):
         val view =parent.inflate(R.layout.item_onboarding)
         return OnboardingHolder(view)
     }
-
     override fun onBindViewHolder(holder: OnboardingHolder, position: Int) {
         val item = list[position]
         holder.bind(item)
     }
-
     override fun getItemCount(): Int =list.size
     class OnboardingHolder(view: View): RecyclerView.ViewHolder(view){
         private val binding = ItemOnboardingBinding.bind(view)
@@ -32,7 +30,6 @@ class OnboardingAdapter(val list:List<Onboarding>):
                 hsv.setOnTouchListener{_,_ ->true}
                 tvTitle.text=onboarding.title
                 tvNameBackground.text=onboarding.namePokemon
-
                 Glide
                     .with(itemView)
                     .load(onboarding.img)

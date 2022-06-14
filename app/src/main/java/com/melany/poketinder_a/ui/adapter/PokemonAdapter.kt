@@ -14,12 +14,12 @@ class PokemonAdapter(
     var callback: Callback
 ):RecyclerView.Adapter<PokemonAdapter.ViewHolder>() {
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PokemonAdapter.ViewHolder {
         val view = parent.inflate(R.layout.item_pokemon)
         return ViewHolder(view)
     }
 
-    override fun onBindViewHolder(holder:ViewHolder, position: Int){
+    override fun onBindViewHolder(holder:PokemonAdapter.ViewHolder, position: Int){
         val item=list[position]
         holder.bind(item)
     }

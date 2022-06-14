@@ -7,10 +7,13 @@
         android:allowBackup="true"
         android:name=".PokeTinderNewApp"
         android:icon="@mipmap/ic_launcher"
-        android:label="PokeTinderNew"
+        android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.PokeTinder_A">
+        <activity
+            android:name=".ui.view.PokemonDetailActivity"
+            android:exported="true"/>
         <activity
             android:name=".PokeTinderNewApp"
             android:exported="false" />

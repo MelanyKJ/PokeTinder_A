@@ -1,16 +1,32 @@
 package com.melany.poketinder_a.ui.view
 
-import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
-import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
-import com.melany.poketinder_a.R
+import androidx.fragment.app.viewModels
+import com.melany.poketinder_a.databinding.FragmentFavoriteBinding
+import com.melany.poketinder_a.domian.model.MyPokemon
+import com.melany.poketinder_a.ui.adapter.MyPokemonsAdapter
 import com.melany.poketinder_a.ui.viewmodel.FavoriteViewModel
+import dagger.hilt.android.AndroidEntryPoint
 
-class FavoriteFragment : Fragment() {
+@AndroidEntryPoint
+class FavoriteFragment : BaseFragment<FragmentFavoriteBinding>(FragmentFavoriteBinding::inflate) {
+    private var listMyPokemon = mutableListOf<MyPokemon>()
+    private val adapter by lazy { MyPokemonsAdapter(listMyPokemon)}
+    private val viewModel: FavoriteViewModel by viewModels()
 
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        viewModel.onCreate()
+        binding.rvPokemons.adapter = adapter
+
+        viewModel.myPokemonList.observe(this){
+            listMyPokemon.addAll(it)
+            adapter.notifyDataSetChanged()
+        }
+    }
+}
+
+/*
     companion object {
         fun newInstance() = FavoriteFragment()
     }
@@ -29,5 +45,4 @@ class FavoriteFragment : Fragment() {
         viewModel = ViewModelProvider(this).get(FavoriteViewModel::class.java)
         // TODO: Use the ViewModel
     }
-
-}
+ */

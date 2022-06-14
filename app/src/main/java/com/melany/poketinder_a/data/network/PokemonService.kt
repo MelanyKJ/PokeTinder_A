@@ -1,5 +1,6 @@
 package com.melany.poketinder_a.data.network
 
+import com.melany.poketinder_a.data.model.PokemonDetailModel
 import com.melany.poketinder_a.data.model.PokemonListModel
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
@@ -13,5 +14,15 @@ class PokemonService @Inject constructor(private val pokemonApi: PokemonApi) {
             res.body()!!
         }
     }
+
+    suspend fun getPokemonById(id:String):PokemonDetailModel{
+        return withContext(Dispatchers.IO){
+            val res:Response<PokemonDetailModel> =pokemonApi.getDetailPokemon(id)
+            res.body()!!
+        }
+    }
+
 }
+
+
 

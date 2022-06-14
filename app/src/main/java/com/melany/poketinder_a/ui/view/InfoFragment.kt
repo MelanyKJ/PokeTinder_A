@@ -10,6 +10,7 @@ import com.melany.poketinder_a.ui.viewmodel.InfoViewModel
 class InfoFragment:BaseFragment<FragmentInfoBinding>(FragmentInfoBinding::inflate) {
     private lateinit var viewModel: InfoViewModel
     private lateinit var webview: WebView
+    private var url ="https://pokemongolive.com/es/"
 
     override fun onSaveInstanceState(outState: Bundle) {
         webview.saveState(outState)
