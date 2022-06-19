@@ -92,4 +92,7 @@ dependencies {
     //Navigation
     implementation "androidx.navigation:navigation-fragment:$navigation_version"
     implementation "androidx.navigation:navigation-ui:$navigation_version"
+
+    //ExpressView
+    implementation "co.ankurg.expressview:expressview:0.0.3"
 }

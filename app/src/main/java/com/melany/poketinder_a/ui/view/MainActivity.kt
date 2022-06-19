@@ -14,6 +14,7 @@ import com.melany.poketinder_a.domian.usecase.GetMyPokemonDetailUseCase
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
 import javax.inject.Inject
+import co.ankurg.expressview.OnCheckListener
 
 @AndroidEntryPoint
 class MainActivity : BaseActivity<ActivityMainBinding>(ActivityMainBinding::inflate) {
