@@ -4,20 +4,25 @@ import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
+import androidx.activity.viewModels
 import com.melany.poketinder_a.databinding.ActivitySplashBinding
 import com.melany.poketinder_a.ui.view.BaseActivity
 import com.melany.poketinder_a.ui.view.LoginActivity
+import com.melany.poketinder_a.ui.viewmodel.SplashViewModel
 import com.melany.poketinder_a.util.SharedPreferenceUtil
 
 class SplashActivity : BaseActivity<ActivitySplashBinding>(ActivitySplashBinding::inflate){
 
     private lateinit var sharedPreferenceUtil:SharedPreferenceUtil
+    private val splashViewModel: SplashViewModel by viewModels()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
         sharedPreferenceUtil = SharedPreferenceUtil().also {
             it.setSharedPreference(this)
         }
+
+        splashViewModel.getIsUnderMaintenance().observe(this){}
         //SE PROGRAMA EL TIEMPO DE DURACIÓN DEL SPLASH ANTES DE PASAR AL MAIN ACTIVITY
         Handler(Looper.getMainLooper()).postDelayed(
             {
